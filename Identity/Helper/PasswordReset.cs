@@ -11,9 +11,9 @@ namespace Identity.Helper
     {
         public static void PAsswordResetSendEmail(string link, string email, string userName)
         {
-            var fromAddress = new MailAddress("test51610898@gmail.com", "Admin");
+            var fromAddress = new MailAddress("test@gmail.com", "Admin");
             var toAddress = new MailAddress(email, userName);
-            const string fromPassword = "Yusa.51610898";
+            const string fromPassword = "123456";
             const string subject = "www.domain.com::Reset Password";
             string body = $"<a href='{link}'>Reset Password Link</a>";
 
